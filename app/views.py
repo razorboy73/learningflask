@@ -6,8 +6,10 @@ from flask.ext.login import login_user, logout_user, current_user, login_require
 from app import app, db, lm, oid
 from config import POSTS_PER_PAGE
 
+from emails import follower_notification
 from forms import LoginForm, EditForm, PostForm
 from models import User, Post
+
 
 @app.route("/", methods=["GET","POST"])
 @app.route("/index", methods=["GET","POST"])
@@ -146,6 +148,7 @@ def follow(nickname):
     db.session.add(u)
     db.session.commit()
     flash('You are now following ' + nickname + '!')
+    follower_notification(user, g.user)
     return redirect(url_for('user', nickname=nickname))
 
 @app.route('/unfollow/<nickname>')
