@@ -1,0 +1,470 @@
+2015-05-14 20:33:08,612 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-14 20:57:40,011 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-14 20:57:52,379 ERROR: Exception on /edit [POST] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 115, in edit
+    if form.validate_on_submit():
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/workhorse/microblog/app/forms.py", line 23, in validate
+    if not Form.validate():
+TypeError: unbound method validate() must be called with Form instance as first argument (got nothing instead)
+2015-05-14 20:58:26,836 ERROR: Exception on /edit [POST] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 115, in edit
+    if form.validate_on_submit():
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/workhorse/microblog/app/forms.py", line 23, in validate
+    if not Form.validate():
+TypeError: unbound method validate() must be called with Form instance as first argument (got nothing instead)
+2015-05-14 20:58:37,730 ERROR: Exception on /edit [POST] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 115, in edit
+    if form.validate_on_submit():
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/workhorse/microblog/app/forms.py", line 23, in validate
+    if not Form.validate():
+TypeError: unbound method validate() must be called with Form instance as first argument (got nothing instead)
+2015-05-14 21:00:01,143 ERROR: Exception on /edit [POST] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 115, in edit
+    if form.validate_on_submit():
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/workhorse/microblog/app/forms.py", line 23, in validate
+    if not Form.validate():
+TypeError: unbound method validate() must be called with Form instance as first argument (got nothing instead)
+2015-05-14 21:01:16,428 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-14 21:01:27,302 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-14 21:06:55,382 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-14 22:11:42,738 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-14 23:19:36,522 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 00:30:35,694 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 01:06:31,302 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 01:06:40,414 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 01:06:42,654 ERROR: Exception on / [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 27, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/workhorse/microblog/app/templates/index.html", line 9, in block "content"
+    <td>{{ form.post(size=30, maxlength = 140 )}}</td>
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-05-15 01:06:56,480 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 27, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/workhorse/microblog/app/templates/index.html", line 9, in block "content"
+    <td>{{ form.post(size=30, maxlength = 140 )}}</td>
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-05-15 01:07:37,364 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 27, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/workhorse/microblog/app/templates/index.html", line 9, in block "content"
+    <td>{{ form.post(size=30, maxlength = 140 )}}</td>
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-05-15 01:07:38,931 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 27, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/workhorse/microblog/app/templates/index.html", line 9, in block "content"
+    <td>{{ form.post(size=30, maxlength = 140 )}}</td>
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-05-15 01:07:41,097 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 27, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/workhorse/microblog/app/templates/index.html", line 9, in block "content"
+    <td>{{ form.post(size=30, maxlength = 140 )}}</td>
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-05-15 01:08:04,319 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 27, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 29, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/workhorse/microblog/app/templates/index.html", line 9, in block "content"
+    <td>{{ form.post(size=30, maxlength = 140 )}}</td>
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 397, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2015-05-15 01:09:14,669 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 01:13:43,106 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 08:43:38,633 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 92, in user
+    flash("User {} not found").format(nickname)
+AttributeError: 'NoneType' object has no attribute 'format'
+2015-05-15 08:43:51,209 ERROR: Exception on /user/johnn [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 92, in user
+    flash("User {} not found").format(nickname)
+AttributeError: 'NoneType' object has no attribute 'format'
+2015-05-15 09:07:17,352 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 09:08:42,877 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 09:08:45,887 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 22, in index
+    posts = Post.query.get().all()
+TypeError: get() takes exactly 2 arguments (1 given)
+2015-05-15 09:08:51,341 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 22, in index
+    posts = Post.query.get().all()
+TypeError: get() takes exactly 2 arguments (1 given)
+2015-05-15 09:08:53,110 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 22, in index
+    posts = Post.query.get().all()
+TypeError: get() takes exactly 2 arguments (1 given)
+2015-05-15 09:08:53,994 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 22, in index
+    posts = Post.query.get().all()
+TypeError: get() takes exactly 2 arguments (1 given)
+2015-05-15 09:09:01,267 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 94, in user
+    posts = Post.query.filter_by(user_id =user.id).all()
+AttributeError: 'NoneType' object has no attribute 'id'
+2015-05-15 09:09:01,521 ERROR: Exception on /user/johnn [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 94, in user
+    posts = Post.query.filter_by(user_id =user.id).all()
+AttributeError: 'NoneType' object has no attribute 'id'
+2015-05-15 09:09:06,022 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 22, in index
+    posts = Post.query.get().all()
+TypeError: get() takes exactly 2 arguments (1 given)
+2015-05-15 09:10:31,392 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 09:12:47,257 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 94, in user
+    posts = Post.query.filter_by(user_id =user.id).all()
+AttributeError: 'NoneType' object has no attribute 'id'
+2015-05-15 09:13:25,638 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 10:35:15,507 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
+2015-05-15 10:36:09,060 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:43]
