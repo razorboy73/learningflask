@@ -24,3 +24,6 @@ MAIL_PASSWORD = None
 
 # administrator list
 ADMINS = ['josh@rallyyourgoals.com']
+
+#pagination
+POSTS_PER_PAGE = 3
