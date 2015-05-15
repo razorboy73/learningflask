@@ -2,5 +2,5 @@ venv
 *.pyc
 .idea/*
 *.db
-tmp/associations/*
-tmp/nonces/*
+tmp/associations/
+tmp/nonces/
