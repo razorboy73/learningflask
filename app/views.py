@@ -5,35 +5,25 @@ from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from app import app, db, lm, oid
 
-from .forms import LoginForm, EditForm
-from .models import User
+from .forms import LoginForm, EditForm, PostForm
+from .models import User, Post
 
-@app.route("/")
-@app.route("/index")
+@app.route("/", methods=["GET","POST"])
+@app.route("/index", methods=["GET","POST"])
 @login_required
 def index():
-    user = {g.user}
-
-    posts = [#array of posts
-        {
-            "author":{"nickname":"john"},
-            "body":"Beautiful day in Portland"
-        },
-        {
-            "author":{"nickname":"josh"},
-            "body":"Hello from NYC"
-        },
-        {
-            "author":{"nickname":"Leah"},
-            "body":"I like shoes"
-        }
-
-
-
-     ]
+    form = PostForm()
+    if form.validate_on_submit():
+        post = Post(body = form.post.data, timestamp=datetime.utcnow(), author = g.user)
+        db.session.add(post)
+        db.session.commit()
+        flash("Post is live")
+        return redirect(url_for('index'))
+    posts = Post.query.all()
+    #posts = g.user.followed_posts().all()
     return render_template("index.html",
                         title = "Home",
-                        user = user,
+                        form=form,
                         posts = posts)
 
 
@@ -100,12 +90,8 @@ def logout():
 def user(nickname):
     user = User.query.filter_by(nickname=nickname).first()
     if user == None:
-        flash("User {} not found").format(nickname)
-    posts = [
-        {"author": user, "body":"test post #1"},
-        {"author": user, "body":"test post #2"}
-    ]
-
+        flash("User %s not found" % nickname)
+    posts = Post.query.filter_by(user_id =user.id).all()
     return render_template("user.html",
                            user =user,
                            posts = posts)
