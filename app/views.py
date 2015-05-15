@@ -19,8 +19,8 @@ def index():
         db.session.commit()
         flash("Post is live")
         return redirect(url_for('index'))
-    posts = Post.query.all()
-    #posts = g.user.followed_posts().all()
+    #posts = Post.query.all()
+    posts = g.user.followed_posts().all()
     return render_template("index.html",
                         title = "Home",
                         form=form,
