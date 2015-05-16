@@ -1,4 +1,5 @@
 __author__ = 'workhorse'
+import re
 from app import db
 from hashlib import md5
 
@@ -74,6 +75,10 @@ class User(db.Model):
     def followed_posts(self):
         return Post.query.join(followers, (followers.c.followed_id == Post.user_id)).\
             filter(followers.c.follower_id ==self.id).order_by(Post.timestamp.desc())
+
+    @staticmethod
+    def make_valid_nickname(nickname):
+        return re.sub('[^a-zA-Z0-9_\.]', '', nickname)
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)

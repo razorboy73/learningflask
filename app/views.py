@@ -3,8 +3,9 @@ __author__ = 'workhorse'
 from datetime import datetime
 from flask import render_template, flash, redirect, session, url_for, request, g
 from flask.ext.login import login_user, logout_user, current_user, login_required
+from flask.ext.sqlalchemy import get_debug_queries
 from app import app, db, lm, oid
-from config import POSTS_PER_PAGE
+from config import POSTS_PER_PAGE, DATABASE_QUERY_TIMEOUT
 
 from emails import follower_notification
 from forms import LoginForm, EditForm, PostForm
@@ -62,6 +63,7 @@ def after_login(resp):
         nickname = resp.nickname
         if nickname is None or nickname =="":
             nickname = resp.email.split('@')[0]
+        nickname = User.make_valid_nickname(nickname)
         nickname = User.make_unique_nickname(nickname)
         user = User(nickname=nickname, email=resp.email)
         db.session.add(user)
@@ -120,6 +122,25 @@ def edit():
     return render_template("edit.html", form=form)
 
 
+@app.route('/delete/<int:id>')
+@login_required
+def delete(id):
+    post = Post.query.get(id)
+    if post is None:
+        flash("Post Not Found")
+        return redirect(url_for('index'))
+    if post.author.id != g.user.id:
+        flash("you cant delete this")
+        return redirect(url_for('index'))
+    db.session.delete(post)
+    db.session.commit()
+    flash("Deleted")
+    return redirect(url_for('index'))
+
+
+
+
+
 @app.errorhandler(404)
 def not_found_error(error):
     return render_template("404.html"), 404
@@ -169,3 +190,11 @@ def unfollow(nickname):
     db.session.commit()
     flash('You have stopped following ' + nickname + '.')
     return redirect(url_for('user', nickname=nickname))
+
+
+@app.after_request
+def after_request(response):
+    for query in get_debug_queries():
+        if query.duration >= DATABASE_QUERY_TIMEOUT:
+            app.logger.warning("SLOW QUERY: %s\nParameters: %s\nDuration: %fs\nContext: %s\n" % (query.statement, query.parameters, query.duration, query.context))
+    return response

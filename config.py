@@ -30,3 +30,8 @@ ADMINS = ['joshadamkerbel@gmail.com', 'josh@rallyyourgoals.com']
 
 #pagination
 POSTS_PER_PAGE = 3
+
+#profiling
+SQLALCHEMY_RECORD_QUERIES = True
+# slow database query threshold (in seconds)
+DATABASE_QUERY_TIMEOUT = 0.5

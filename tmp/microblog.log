@@ -3347,3 +3347,708 @@ Traceback (most recent call last):
 NameError: global name 'Thread' is not defined
 2015-05-15 15:09:55,535 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:35]
 2015-05-15 15:36:07,848 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:35]
+2015-05-15 16:46:23,448 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 16:54:22,494 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 17:19:21,418 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 17:53:23,846 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 32, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/base.html", line 47, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-05-15 17:53:25,489 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 32, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/base.html", line 47, in template
+    {% block content %}{% endblock %}
+TemplateAssertionError: block 'content' defined twice
+2015-05-15 18:12:42,590 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 18:57:40,012 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 18:58:14,025 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 19:10:05,700 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 19:23:56,208 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 20:17:12,371 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 20:55:46,801 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 21:25:31,608 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:37]
+2015-05-15 21:26:21,243 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:26:31,794 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:26:36,758 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:26:37,200 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:27:01,101 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:27:01,742 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:27:02,138 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:27:55,404 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:36]
+2015-05-15 21:27:59,368 ERROR: Exception on /login [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_openid.py", line 495, in decorated
+    return f(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 47, in login
+    providers = app.config['OPENID_PROVIDERS'])
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/login.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 64, in get_source
+    raise TemplateNotFound(template)
+TemplateNotFound: bootstrap/base.html
+2015-05-15 21:37:24,110 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:36]
+2015-05-15 21:37:30,804 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 32, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/base.html", line 9, in template
+    {% else %}
+TemplateSyntaxError: Encountered unknown tag 'else'.
+2015-05-15 21:37:45,856 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:36]
+2015-05-15 21:37:49,918 ERROR: Exception on /index [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 32, in index
+    posts = posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/base.html", line 9, in template
+    {% else %}
+TemplateSyntaxError: Encountered unknown tag 'else'.
+2015-05-16 00:00:51,819 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:39]
+2015-05-16 00:22:38,414 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:39]
+2015-05-16 00:40:42,287 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:39]
+2015-05-16 00:40:48,261 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:40:59,455 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:42:04,044 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:42:13,834 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:43:42,275 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:43:45,954 ERROR: Exception on /user/josh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:43:58,156 ERROR: Exception on /user/leigh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:44:18,869 ERROR: Exception on /user/leigh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 8, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:45:21,294 ERROR: Exception on /user/leigh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 7, in top-level template code
+    <div><a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a></div>
+UndefinedError: '_' is undefined
+2015-05-16 00:45:47,637 ERROR: Exception on /user/leigh [GET] [in /Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask_login.py", line 758, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/workhorse/microblog/app/views.py", line 105, in user
+    posts=posts)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 128, in render_template
+    context, ctx.app)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/flask/templating.py", line 110, in _render
+    rv = template.render(context)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 969, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/workhorse/flask_hello_world_env/lib/python2.7/site-packages/jinja2/environment.py", line 742, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/workhorse/microblog/app/templates/user.html", line 1, in top-level template code
+    {%  extends "base.html" %}
+  File "/Users/workhorse/microblog/app/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/Users/workhorse/microblog/app/templates/user.html", line 32, in block "content"
+    {%  include "post.html" %}
+  File "/Users/workhorse/microblog/app/templates/post.html", line 7, in top-level template code
+    <a href="{{ url_for('delete', id=post.id) }}">{{ _('Delete') }}</a>
+UndefinedError: '_' is undefined
+2015-05-16 00:48:18,562 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:39]
+2015-05-16 01:02:14,852 INFO: microblog startup [in /Users/workhorse/microblog/app/__init__.py:39]
